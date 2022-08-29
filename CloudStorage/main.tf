@@ -1,5 +1,5 @@
 resource "google_storage_bucket" "GCS1" {
-    name = "bucket-using-tfscript-afzal"
+    name = "unique-bucket-name"
     location = "US"  
     storage_class = "NEARLINE"
     labels = {
@@ -19,7 +19,7 @@ resource "google_storage_bucket" "GCS1" {
 
 resource "google_storage_bucket_object" "object" {
     name = "Time_Tracking"
-    source = "C:/Users/002VH4744/Documents/Time_Tracking.png"
+    source = "C:/Users/Documents/Time_Tracking.png"
     bucket = google_storage_bucket.GCS1.name
   
 }
