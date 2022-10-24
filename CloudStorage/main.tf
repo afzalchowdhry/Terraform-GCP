@@ -1,5 +1,5 @@
 resource "google_storage_bucket" "GCS1" {
-    name = "unique-bucket-name"
+    name = "bucket-using-tfscript-afzal"
     location = "US"  
     storage_class = "NEARLINE" #Default it would be STANDARD
     labels = {
