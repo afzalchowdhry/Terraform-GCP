@@ -19,7 +19,7 @@ resource "google_storage_bucket" "GCS1" {
 
 resource "google_storage_bucket_object" "object" {
     name = "Time_Tracking"
-    source = "C:/Users/Documents/Time_Tracking.png"
+    source = "time.jpeg"
     bucket = google_storage_bucket.GCS1.name
   
 }
