@@ -1,5 +1,5 @@
 resource "google_storage_bucket" "GCS1" {
-    name = "bucket-using-tfscript-afzal-test"
+    name = "jenkins-github-bucket-tfscript-afzal-test"
     location = "US"  
     storage_class = "NEARLINE"
     labels = {
